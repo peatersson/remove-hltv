@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "remove-hltv",
+  "version": "0.1",
+  "description": "No more adds on hltv",
+  "author": "Niklas Pettersson",
+  "content_scripts": [
+      {
+        "run_at": "document_end",
+        "matches": ["*://*.hltv.org/*"],
+        "js": ["main.js"]
+      }
+    ]
+  }
