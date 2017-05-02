@@ -27,12 +27,11 @@ remove_adds = function(){
 var r_pressed = false;
 
 window.onclick = function(event){
-  if(r_pressed) {
-    event.preventDefault();
+  if(r_pressed == true) {
     element_clicked(event.target);
+    return false;
   }
   r_pressed = false;
-  return false;
 };
 
 window.addEventListener("keydown", function(e){
